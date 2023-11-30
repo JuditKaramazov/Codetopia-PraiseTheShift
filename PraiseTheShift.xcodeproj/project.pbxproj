@@ -1,0 +1,718 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF0046BB23C026CB001A2C61 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0046BA23C026CB001A2C61 /* UserDefaults.swift */; };
+		AF28E82423AA997E007FA92D /* PreferencesPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF28E82323AA997E007FA92D /* PreferencesPopover.swift */; };
+		AF39030D23EDD6BE004F24EF /* PraiseTheShiftLauncher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = AFC6D03D23ECC16900540635 /* PraiseTheShiftLauncher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AF3F393C23F4633C0071520B /* AppUpdateChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3F393B23F4633C0071520B /* AppUpdateChecker.swift */; };
+		AF522512219BA23600A2A467 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF522511219BA23600A2A467 /* AppDelegate.swift */; };
+		AF522516219BA23800A2A467 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF522515219BA23800A2A467 /* Assets.xcassets */; };
+		AF559C7323EFA3400010EAE1 /* GithubAPIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF559C7223EFA3400010EAE1 /* GithubAPIModels.swift */; };
+		AF7A00B223EE5F890062D841 /* SemanticVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7A00B123EE5F890062D841 /* SemanticVersion.swift */; };
+		AF7A0686279E48290031EC45 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7A0685279E48290031EC45 /* View.swift */; };
+		AF818F2B23C2420B00E95C59 /* ToggleDarkMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF818F2A23C2420B00E95C59 /* ToggleDarkMode.swift */; };
+		AF8EED5E2A9A7A0C00B65FEB /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = AF8EED5D2A9A7A0C00B65FEB /* KeyboardShortcuts */; };
+		AF8EED622A9A7AF600B65FEB /* KeyboardShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8EED612A9A7AF600B65FEB /* KeyboardShortcuts.swift */; };
+		AF939CD723B1472700053801 /* About.txt in Resources */ = {isa = PBXBuildFile; fileRef = AF939CD623B1472700053801 /* About.txt */; };
+		AF939CD923B3FA2E00053801 /* AboutWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF939CD823B3FA2E00053801 /* AboutWindowController.swift */; };
+		AF939CDF23B441FD00053801 /* ObservableUserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF939CDE23B441FD00053801 /* ObservableUserDefault.swift */; };
+		AF99EF77219BCE08004A252B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF99EF79219BCE08004A252B /* Main.storyboard */; };
+		AFA1FCA6237A026800BBBFE3 /* PraiseTheShiftStatusItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA1FCA5237A026800BBBFE3 /* PraiseTheShiftStatusItemController.swift */; };
+		AFC6499323F4925000E321E8 /* Application.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFC6499223F4925000E321E8 /* Application.xib */; };
+		AFC6D04023ECC16900540635 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC6D03F23ECC16900540635 /* AppDelegate.swift */; };
+		AFC736CA23B01D7800D80A21 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC736C923B01D7800D80A21 /* AboutView.swift */; };
+		AFCF6CB323B5254400C5CA70 /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCF6CB223B5254400C5CA70 /* PreferencesView.swift */; };
+		AFCF6CBD23B920AB00C5CA70 /* NSMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCF6CBC23B920AB00C5CA70 /* NSMenuItem.swift */; };
+		AFDE642323C920DA00BBEB7A /* PermissionUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDE642223C920DA00BBEB7A /* PermissionUtil.swift */; };
+		AFE1CCE52798D63500DBC30F /* SkyLight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFE1CCE42798D63500DBC30F /* SkyLight.framework */; };
+		AFE1CCEC279A53FD00DBC30F /* AppearanceTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE1CCEB279A53FD00DBC30F /* AppearanceTheme.swift */; };
+		AFEA8B2523F1C5430047EDD0 /* GithubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEA8B2423F1C5430047EDD0 /* GithubAPI.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF39030E23EDD749004F24EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF522506219BA23600A2A467 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFC6D03C23ECC16900540635;
+			remoteInfo = PraiseTheShiftLauncher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AF39030C23EDD6A8004F24EF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				AF39030D23EDD6BE004F24EF /* PraiseTheShiftLauncher.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AF0046BA23C026CB001A2C61 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		AF28E82323AA997E007FA92D /* PreferencesPopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesPopover.swift; sourceTree = "<group>"; };
+		AF3F393B23F4633C0071520B /* AppUpdateChecker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUpdateChecker.swift; sourceTree = "<group>"; };
+		AF52250E219BA23600A2A467 /* PraiseTheShift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PraiseTheShift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF522511219BA23600A2A467 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AF522515219BA23800A2A467 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF52251A219BA23800A2A467 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF52251B219BA23800A2A467 /* PraiseTheShift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PraiseTheShift.entitlements; sourceTree = "<group>"; };
+		AF559C7223EFA3400010EAE1 /* GithubAPIModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAPIModels.swift; sourceTree = "<group>"; };
+		AF7A00B123EE5F890062D841 /* SemanticVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemanticVersion.swift; sourceTree = "<group>"; };
+		AF7A0685279E48290031EC45 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		AF818F2A23C2420B00E95C59 /* ToggleDarkMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleDarkMode.swift; sourceTree = "<group>"; };
+		AF8EED612A9A7AF600B65FEB /* KeyboardShortcuts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardShortcuts.swift; sourceTree = "<group>"; };
+		AF939CD623B1472700053801 /* About.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = About.txt; sourceTree = "<group>"; };
+		AF939CD823B3FA2E00053801 /* AboutWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutWindowController.swift; sourceTree = "<group>"; };
+		AF939CDE23B441FD00053801 /* ObservableUserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableUserDefault.swift; sourceTree = "<group>"; };
+		AF99EF8A219BD070004A252B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AFA1FCA5237A026800BBBFE3 /* PraiseTheShiftStatusItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PraiseTheShiftStatusItemController.swift; sourceTree = "<group>"; };
+		AFC6499223F4925000E321E8 /* Application.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Application.xib; sourceTree = "<group>"; };
+		AFC6D03D23ECC16900540635 /* PraiseTheShiftLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PraiseTheShiftLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFC6D03F23ECC16900540635 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AFC6D04B23ECC16A00540635 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFC6D04C23ECC16A00540635 /* PraiseTheShiftLauncher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PraiseTheShiftLauncher.entitlements; sourceTree = "<group>"; };
+		AFC736C923B01D7800D80A21 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		AFCF6CB223B5254400C5CA70 /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
+		AFCF6CBC23B920AB00C5CA70 /* NSMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSMenuItem.swift; sourceTree = "<group>"; };
+		AFDE642223C920DA00BBEB7A /* PermissionUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionUtil.swift; sourceTree = "<group>"; };
+		AFE1CCE42798D63500DBC30F /* SkyLight.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SkyLight.framework; path = ../../../../System/Library/PrivateFrameworks/SkyLight.framework; sourceTree = "<group>"; };
+		AFE1CCEA2798DD8100DBC30F /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		AFE1CCEB279A53FD00DBC30F /* AppearanceTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceTheme.swift; sourceTree = "<group>"; };
+		AFEA8B2423F1C5430047EDD0 /* GithubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAPI.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF52250B219BA23600A2A467 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFE1CCE52798D63500DBC30F /* SkyLight.framework in Frameworks */,
+				AF8EED5E2A9A7A0C00B65FEB /* KeyboardShortcuts in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFC6D03A23ECC16900540635 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF2582E4238339680088E4B2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AF8EED612A9A7AF600B65FEB /* KeyboardShortcuts.swift */,
+				AFCF6CBC23B920AB00C5CA70 /* NSMenuItem.swift */,
+				AF0046BA23C026CB001A2C61 /* UserDefaults.swift */,
+				AF7A0685279E48290031EC45 /* View.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AF522505219BA23600A2A467 = {
+			isa = PBXGroup;
+			children = (
+				AF522510219BA23600A2A467 /* PraiseTheShift */,
+				AFC6D03E23ECC16900540635 /* PraiseTheShiftLauncher */,
+				AF52250F219BA23600A2A467 /* Products */,
+				AFE1CCE32798D63500DBC30F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AF52250F219BA23600A2A467 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF52250E219BA23600A2A467 /* PraiseTheShift.app */,
+				AFC6D03D23ECC16900540635 /* PraiseTheShiftLauncher.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF522510219BA23600A2A467 /* PraiseTheShift */ = {
+			isa = PBXGroup;
+			children = (
+				AF2582E4238339680088E4B2 /* Extensions */,
+				AF559C7423EFA3680010EAE1 /* Networking */,
+				AFCF6CB123B523FA00C5CA70 /* Utility */,
+				AFC736C623B01D6200D80A21 /* Views */,
+				AF522511219BA23600A2A467 /* AppDelegate.swift */,
+				AFA1FCA5237A026800BBBFE3 /* PraiseTheShiftStatusItemController.swift */,
+				AF818F2A23C2420B00E95C59 /* ToggleDarkMode.swift */,
+				AF939CD823B3FA2E00053801 /* AboutWindowController.swift */,
+				AF28E82323AA997E007FA92D /* PreferencesPopover.swift */,
+				AF3F393B23F4633C0071520B /* AppUpdateChecker.swift */,
+				AF99EF79219BCE08004A252B /* Main.storyboard */,
+				AF522515219BA23800A2A467 /* Assets.xcassets */,
+				AF939CD623B1472700053801 /* About.txt */,
+				AFE1CCEA2798DD8100DBC30F /* BridgingHeader.h */,
+				AF52251A219BA23800A2A467 /* Info.plist */,
+				AF52251B219BA23800A2A467 /* PraiseTheShift.entitlements */,
+			);
+			path = PraiseTheShift;
+			sourceTree = "<group>";
+		};
+		AF559C7423EFA3680010EAE1 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				AFEA8B2423F1C5430047EDD0 /* GithubAPI.swift */,
+				AF559C7523EFA36C0010EAE1 /* Models */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		AF559C7523EFA36C0010EAE1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AF559C7223EFA3400010EAE1 /* GithubAPIModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AFC6D03E23ECC16900540635 /* PraiseTheShiftLauncher */ = {
+			isa = PBXGroup;
+			children = (
+				AFC6D03F23ECC16900540635 /* AppDelegate.swift */,
+				AFC6499223F4925000E321E8 /* Application.xib */,
+				AFC6D04B23ECC16A00540635 /* Info.plist */,
+				AFC6D04C23ECC16A00540635 /* PraiseTheShiftLauncher.entitlements */,
+			);
+			path = PraiseTheShiftLauncher;
+			sourceTree = "<group>";
+		};
+		AFC736C623B01D6200D80A21 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AFC736C923B01D7800D80A21 /* AboutView.swift */,
+				AFCF6CB223B5254400C5CA70 /* PreferencesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AFCF6CB123B523FA00C5CA70 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				AFE1CCEB279A53FD00DBC30F /* AppearanceTheme.swift */,
+				AF939CDE23B441FD00053801 /* ObservableUserDefault.swift */,
+				AFDE642223C920DA00BBEB7A /* PermissionUtil.swift */,
+				AF7A00B123EE5F890062D841 /* SemanticVersion.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		AFE1CCE32798D63500DBC30F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFE1CCE42798D63500DBC30F /* SkyLight.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF52250D219BA23600A2A467 /* PraiseTheShift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF522529219BA23800A2A467 /* Build configuration list for PBXNativeTarget "PraiseTheShift" */;
+			buildPhases = (
+				AF52250A219BA23600A2A467 /* Sources */,
+				AF52250B219BA23600A2A467 /* Frameworks */,
+				AF52250C219BA23600A2A467 /* Resources */,
+				AF39030C23EDD6A8004F24EF /* CopyFiles */,
+				AF3DB17F23C55B6B00E94891 /* Set Build Number */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF39030F23EDD749004F24EF /* PBXTargetDependency */,
+			);
+			name = PraiseTheShift;
+			packageProductDependencies = (
+				AF8EED5D2A9A7A0C00B65FEB /* KeyboardShortcuts */,
+			);
+			productName = PraiseTheShift;
+			productReference = AF52250E219BA23600A2A467 /* PraiseTheShift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AFC6D03C23ECC16900540635 /* PraiseTheShiftLauncher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFC6D04D23ECC16A00540635 /* Build configuration list for PBXNativeTarget "PraiseTheShiftLauncher" */;
+			buildPhases = (
+				AFC6D03923ECC16900540635 /* Sources */,
+				AFC6D03A23ECC16900540635 /* Frameworks */,
+				AFC6D03B23ECC16900540635 /* Resources */,
+				AFC6D05023ECC38B00540635 /* Set Build Number */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PraiseTheShiftLauncher;
+			productName = PraiseTheShiftLauncher;
+			productReference = AFC6D03D23ECC16900540635 /* PraiseTheShiftLauncher.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF522506219BA23600A2A467 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1420;
+				ORGANIZATIONNAME = "Judit Lázaro";
+				TargetAttributes = {
+					AF52250D219BA23600A2A467 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					AFC6D03C23ECC16900540635 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = AF522509219BA23600A2A467 /* Build configuration list for PBXProject "PraiseTheShift" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF522505219BA23600A2A467;
+			packageReferences = (
+				AF8EED5C2A9A7A0C00B65FEB /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
+			);
+			productRefGroup = AF52250F219BA23600A2A467 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF52250D219BA23600A2A467 /* PraiseTheShift */,
+				AFC6D03C23ECC16900540635 /* PraiseTheShiftLauncher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF52250C219BA23600A2A467 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF522516219BA23800A2A467 /* Assets.xcassets in Resources */,
+				AF99EF77219BCE08004A252B /* Main.storyboard in Resources */,
+				AF939CD723B1472700053801 /* About.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFC6D03B23ECC16900540635 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFC6499323F4925000E321E8 /* Application.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AF3DB17F23C55B6B00E94891 /* Set Build Number */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Set Build Number";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "git=`sh /etc/profile; which git`\nbundleVersion=\"`\"$git\" rev-parse --short HEAD`\"\ngit diff-index --quiet HEAD -- || bundleVersion=\"$bundleVersion*\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $bundleVersion\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\n";
+		};
+		AFC6D05023ECC38B00540635 /* Set Build Number */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Set Build Number";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "git=`sh /etc/profile; which git`\nbundleVersion=\"`\"$git\" rev-parse --short HEAD`\"\ngit diff-index --quiet HEAD -- || bundleVersion=\"$bundleVersion*\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $bundleVersion\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\t\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF52250A219BA23600A2A467 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF8EED622A9A7AF600B65FEB /* KeyboardShortcuts.swift in Sources */,
+				AFA1FCA6237A026800BBBFE3 /* PraiseTheShiftStatusItemController.swift in Sources */,
+				AF818F2B23C2420B00E95C59 /* ToggleDarkMode.swift in Sources */,
+				AF7A0686279E48290031EC45 /* View.swift in Sources */,
+				AF522512219BA23600A2A467 /* AppDelegate.swift in Sources */,
+				AFC736CA23B01D7800D80A21 /* AboutView.swift in Sources */,
+				AFCF6CB323B5254400C5CA70 /* PreferencesView.swift in Sources */,
+				AF939CDF23B441FD00053801 /* ObservableUserDefault.swift in Sources */,
+				AF7A00B223EE5F890062D841 /* SemanticVersion.swift in Sources */,
+				AF3F393C23F4633C0071520B /* AppUpdateChecker.swift in Sources */,
+				AFDE642323C920DA00BBEB7A /* PermissionUtil.swift in Sources */,
+				AF559C7323EFA3400010EAE1 /* GithubAPIModels.swift in Sources */,
+				AFCF6CBD23B920AB00C5CA70 /* NSMenuItem.swift in Sources */,
+				AF28E82423AA997E007FA92D /* PreferencesPopover.swift in Sources */,
+				AFE1CCEC279A53FD00DBC30F /* AppearanceTheme.swift in Sources */,
+				AF0046BB23C026CB001A2C61 /* UserDefaults.swift in Sources */,
+				AFEA8B2523F1C5430047EDD0 /* GithubAPI.swift in Sources */,
+				AF939CD923B3FA2E00053801 /* AboutWindowController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFC6D03923ECC16900540635 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFC6D04023ECC16900540635 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF39030F23EDD749004F24EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFC6D03C23ECC16900540635 /* PraiseTheShiftLauncher */;
+			targetProxy = AF39030E23EDD749004F24EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AF99EF79219BCE08004A252B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF99EF8A219BD070004A252B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF522527219BA23800A2A467 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AF522528219BA23800A2A467 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		AF52252A219BA23800A2A467 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PraiseTheShift/PraiseTheShift.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = K56VBMHDSG;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = PraiseTheShift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.JuditKaramazov.PraiseTheShift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = PraiseTheShift/BridgingHeader.h;
+				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+			};
+			name = Debug;
+		};
+		AF52252B219BA23800A2A467 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PraiseTheShift/PraiseTheShift.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = K56VBMHDSG;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = PraiseTheShift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.JuditKaramazov.PraiseTheShift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = PraiseTheShift/BridgingHeader.h;
+				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+			};
+			name = Release;
+		};
+		AFC6D04E23ECC16A00540635 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PraiseTheShiftLauncher/PraiseTheShiftLauncher.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = "-1";
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = K56VBMHDSG;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = PraiseTheShiftLauncher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 3.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.JuditKaramazov.PraiseTheShiftLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AFC6D04F23ECC16A00540635 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PraiseTheShiftLauncher/PraiseTheShiftLauncher.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = "-1";
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = K56VBMHDSG;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = PraiseTheShiftLauncher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 3.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.JuditKaramazov.PraiseTheShiftLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF522509219BA23600A2A467 /* Build configuration list for PBXProject "PraiseTheShift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF522527219BA23800A2A467 /* Debug */,
+				AF522528219BA23800A2A467 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF522529219BA23800A2A467 /* Build configuration list for PBXNativeTarget "PraiseTheShift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF52252A219BA23800A2A467 /* Debug */,
+				AF52252B219BA23800A2A467 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFC6D04D23ECC16A00540635 /* Build configuration list for PBXNativeTarget "PraiseTheShiftLauncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFC6D04E23ECC16A00540635 /* Debug */,
+				AFC6D04F23ECC16A00540635 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AF8EED5C2A9A7A0C00B65FEB /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
+			requirement = {
+				kind = exactVersion;
+				version = 1.14.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AF8EED5D2A9A7A0C00B65FEB /* KeyboardShortcuts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF8EED5C2A9A7A0C00B65FEB /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
+			productName = KeyboardShortcuts;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = AF522506219BA23600A2A467 /* Project object */;
+}
